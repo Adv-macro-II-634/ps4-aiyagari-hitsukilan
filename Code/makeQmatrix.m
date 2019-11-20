@@ -16,7 +16,7 @@ Q = sparse(m*n, m*n);
 % sequential way to construct Q:
 for xi = 1:n
     for zi = 1:m
-        row = (xi - 1) * m +  zi;
+        row = (xi - 1) * m + zi;
         col = (pol_indx(zi, xi) - 1) * m;
         Q(row, col+1:col+m) = PI(zi,:);
     end
@@ -28,6 +28,7 @@ cols = kron((pol_indx(:) - 1) * m, ones(m,1)) + kron(ones(m*n, 1), (1:m)');
 % vals = repmat([PI(1,:)'; PI(2,:)'], [n, 1]);
 vals = repmat( reshape( permute( PI, [2 1] ), [], 1) , [n, 1]);
 Q = sparse(rows, cols, vals, m*n, m*n);
+
 
 
 

@@ -1,0 +1,582 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass amsart
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "lmodern" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 10
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\noindent
+
+\size large
+Homework 4
+\end_layout
+
+\begin_layout Author
+\noindent
+Danqing Lan
+\end_layout
+
+\begin_layout Subsection*
+\noindent
+Question 1.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+The firm's problem can be descrided as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\underset{\{K_{t+1}^{d},\,N_{t}^{d}\}}{max}\sum_{t=0}^{\infty}(\frac{1}{\Pi_{i=0}^{t}r_{i}})(F(K_{t},N_{t})-w_{t}N_{t}-r_{t}K_{t}+(1-\delta)K_{t})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+subject to 
+\begin_inset Formula $F(K_{t},N_{t})=K_{t}^{\alpha}N_{t}^{1-\alpha}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The first-order conditions for the firm with respect to 
+\begin_inset Formula $K_{t+1}$
+\end_inset
+
+ is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{\Pi_{i=0}^{t}r_{i}}(\alpha K_{t+1}^{\alpha-1}N_{t+1}^{1-\alpha}-r_{t+1}+(1-\delta)).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The first-order conditions for the firm with respect to 
+\begin_inset Formula $N_{t}$
+\end_inset
+
+ is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{\Pi_{i=0}^{t}r_{i}}((1-\alpha)K_{t}^{a}N_{t}^{-\alpha}-w_{t}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Set both equations equal to zero we can get the factor prices given 
+\begin_inset Formula $K_{t+1}$
+\end_inset
+
+ and 
+\begin_inset Formula $N_{t}$
+\end_inset
+
+, which are
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r_{t+1}=\alpha K_{t+1}^{\alpha-1}N_{t+1}^{1-\alpha}+(1-\delta)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+w_{t}=(1-\alpha)K_{t}^{a}N_{t}^{-\alpha}.
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\noindent
+Question 2.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The household's recursive problem is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v(z,a)=\underset{a'\in[\underline{a},\bar{a}]}{max}\left\{ \frac{(zwl+ra-a')^{1-\sigma}}{1-\sigma}+\beta\mathbb{E}_{z,a|z',a'}[v(z',a')]\right\} 
+\]
+
+\end_inset
+
+where the labor unit each worker has is 
+\begin_inset Formula $l_{t}=\bar{l}=1$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ is the amount of assets and 
+\begin_inset Formula $z$
+\end_inset
+
+ is the worker's labor efficiency.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\noindent
+Question 3.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $m=5$
+\end_inset
+
+, with Rouwenhorst's method, the discrete set of possible values for 
+\begin_inset Formula $z$
+\end_inset
+
+ is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z=\left[\begin{array}{ccccc}
+0.6301 & 0.79381.5871 & 1 & 1.12598 & 1.587\end{array}\right]
+\]
+
+\end_inset
+
+ with transition matrix 
+\begin_inset Formula $\Pi=\left[\begin{array}{ccccc}
+0.3164 & 0.4219 & 0.2109 & 0.0469 & 0.0039\\
+0.1055 & 0.4219 & 0.3516 & 0.1094 & 0.0117\\
+0.0352 & 0.2344 & 0.4609 & 0.2344 & 0.0352\\
+0.0117 & 0.1094 & 0.3516 & 0.4219 & 0.1055\\
+0.0039 & 0.0469 & 0.2109 & 0.4219 & 0.3164
+\end{array}\right].$
+\end_inset
+
+ The invariant distribution of the implied Markov process over productivity
+ states 
+\begin_inset Formula $\Pi^{inv}(z)=\Pi^{1000}=\left[\begin{array}{ccccc}
+0.0625 & 0.2500 & 0.3750 & 0.2500 & 0.0625\end{array}\right]$
+\end_inset
+
+.
+ Given 
+\begin_inset Formula $\bar{l}=1,$
+\end_inset
+
+the aggregate effectie labor supply I obtained is 
+\begin_inset Formula $N^{s}=1.0270$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\noindent
+Question 4.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\begin_inset Formula $n=500,$
+\end_inset
+
+ the lower and upper bounds for the grid I set in this practice are 
+\begin_inset Formula $a_{min}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $a_{max}=100$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\noindent
+Question 6.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Accroding to my results, the steady state interest rate in this model 
+\begin_inset Formula $r=1.0098$
+\end_inset
+
+, which is slightly lower it in competitive market, i.e.
+ 
+\begin_inset Formula $r^{CM}=\frac{1}{\beta}=1.0101$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Policy Function for m=5 Productivity States
+\backslash
+label{time}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/Lan/Documents/GitHub/ps4-aiyagari-hitsukilan/Output/Figure1.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Lorenz Curv
+\backslash
+label{time}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/Lan/Documents/GitHub/ps4-aiyagari-hitsukilan/Output/Figure2.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Wealth distribution
+\backslash
+label{time}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/Lan/Documents/GitHub/ps4-aiyagari-hitsukilan/Output/Figure3.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Comparing to the Hugget model, the wealth distribution of Aiyagari model
+ has a thinner and longer right tail, which is more similar to the empirical
+ wealth distribution.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Question 7
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I am still working on the policy function iteration with 
+\begin_inset Formula $k=30$
+\end_inset
+
+ to solve for the same value function.
+ 
+\end_layout
+
+\end_body
+\end_document
