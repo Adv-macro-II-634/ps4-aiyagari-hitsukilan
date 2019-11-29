@@ -74,9 +74,9 @@ while (abs(K_tol) > 0.01)
        
        pol_fn = a(pol_indx);
        u_mat = bsxfun(@minus, r * a, pol_fn);
-       u_mat = bsxfun(@plus, u_mat, zgrid' * w);
+       u_mat = bsxfun(@plus, u_mat, permute((zgrid' * w),[3 2 1]));
        u_mat = (u_mat.^(1-sigma)./(1-sigma));
-       
+      
        v_vec = v_guess(:);
        u_vec = u_mat(:);
        

@@ -555,6 +555,27 @@ Comparing to the Hugget model, the wealth distribution of Aiyagari model
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Question 7
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I am still working on the policy function iteration with 
+\begin_inset Formula $k=30$
+\end_inset
+
+ to solve for the same value function.
+ 
 \end_layout
 
 \end_body
